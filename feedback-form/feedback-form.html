@@ -1,0 +1,63 @@
+<html>
+    <head>
+      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+  <link rel="stylesheet" href="csstyle.css">
+</head>
+<title>Feedback-form</title>
+<body>
+  <h1 id="title">corona virus survey </h1>
+  <p id="description" align="center">Help the goverment by giving your opinion about ongoing corona crisis and help to make the change. </p><!--change the description-->
+    <div class="form" align="center">
+    <form id="survey-form">
+      
+      <lable id="name-lable">Name:</lable><br>
+        <input type="text" name="name" placeholder="enter your name"id="name">
+      
+      <br><br>
+       
+      <lable id="email-lable">Email:</lable><br>
+      <input type="email" name="email" placeholder="enter your email"id="email">
+  <br><br>  
+
+      <lable id="number-lable">Age:</lable><br>
+      <input type="number" name="age" placeholder="enter your age" id="age" min="18" max="100">
+    
+  <br><br>
+      <lable id="dropdown lable">Select your current occuipation:</lable><br>
+      <select id="dropdown" name="occuipation" required>
+         <option value="student">student</option>
+        <option value="employee">employee</option>
+        <option value="freelancer">freelancer</option>
+        <option value="bussiness">bussiness</option>
+        <option value="unemployed">unemployed</option></select>      
+  <br>
+        <p>Do you think lockdown is enough to stop corona virus?</p>
+  <input type="radio" name="yes">
+  <label for="yes">yes</label>&nbsp;
+  <input type="radio" name="yes">
+  <label for="female">no</label>&nbsp;
+  <input type="radio" name="yes">
+  <label for="other">don't know</label>
+     
+       <p>Does your monthly income is affected by national lockdown?</p>
+  
+  <input type="radio" name="yess">
+  <label for="yes">yes</label>&nbsp;
+      <input type="radio" name="yess">
+  <label for="no">no</label>&nbsp;
+      
+    <p>Do you think that because of corono virus the golbal economy will go into recession?</p>
+     
+      <input type="checkbox" name="yes" value="yes">&nbsp;<label>yes</label>&nbsp;
+       <input type="checkbox" name="no" value="no">&nbsp;<label>no</label>&nbsp;
+       <input type="checkbox" name="don't know" value="don't know">&nbsp;<label>don't know</label>
+     
+      <p>any suggestion on how goverment should tackle with corona virus?</p>
+     
+      <textarea  cols="70" rows="8" placeholder="please write here"></textarea>
+      <br><br>
+      <input type="button" name="submit" value="submit" id="submit" onclick="alert('your responce has been recorded')">
+      </div>
+      </body>
+  

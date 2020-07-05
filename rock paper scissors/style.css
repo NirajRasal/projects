@@ -1,9 +1,23 @@
 .buttons{
-	color:blue;
 	text-align: center;
-	margin: 200px;
+	margin: 250px;
+	margin-left: 500px;
 	opacity: 0.8;
 }
-#output{
+#output
+{
 margin: 20px;
+}
+.flexbox-container
+{
+	display: flex;
+}
+.flexbox1{
+	color:green;
+}
+.flexbox2{
+	color:red;
+}
+.flexbox3{
+	color:orange;
 }

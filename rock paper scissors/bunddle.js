@@ -1,17 +1,9 @@
 	let userinput;
 	let computerinput;
-	let i=0;
 	let win=0;
 	let lose=0;
 	let draw=0;
-	//let username=document.getElementById('username').value;
-/*function usernamee()													not working
-{
-	username=document.getElementById("username").value;
-}
-console.log(username);*/
-for(i=0;i<5;i++)
-{
+
 	var options= ["rock","paper","scissors"];
 	function rock()
 	{
@@ -97,7 +89,3 @@ for(i=0;i<5;i++)
 			document.getElementById('output').innerHTML='Something went wrong!!Please try agian..';
 		}
 	}
-}
-//document.getElementById('rock').disabled=true;
-//document.getElementById('paper').disabled=true;
-//document.getElementById('scissors').disabled=true;

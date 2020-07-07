@@ -6,23 +6,28 @@
 </head>
 <body>
 <div class="flexbox-container">
+	<p id="score">Scoreboard</p>
 	<div class="flexbox1">
-	<p id="winner"></p>
+	<p id="winner">win=0</p>
 	</div>&nbsp;&nbsp;&nbsp;
 	<div class="flexbox2">
-	<p id="losser"></p>
+	<p id="losser">lose=0</p>
 </div>&nbsp;&nbsp;&nbsp;
 	<div class="flexbox3">
-	<p id="draw"></p>
-</div>&nbsp;&nbsp;&nbsp;
+	<p id="draw">draw=0</p>
 </div>
-<div class="buttons">
-<button id="rock" onclick="rock()">Rock</button>&nbsp;
-<button id="paper" onclick="paper()">Paper</button>&nbsp;
-<button id="scissors" onclick="scissors()">Scissors</button>
-<p><span id="display"></span></p>
-<p><span id="display1"></span></p>
-<div id="output"></div>
+<div class="op">
+	<p><span id="display"></span></p>
+	<p><span id="display1"></span></p>
+	<div id="output"></div>
+</div>
+</div>
+<div class="rectangle2">
+	<div class="img">
+<img src=crop_rock.png id="rock" height="250" width="200" onclick="rock()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="crop_paper.png" id="paper" height="250" width="200" onclick="paper()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="crop_scissors.png" id="scissors" height="250" width="200" onclick="scissors()">
+</div>
 
 </div>
 </body>

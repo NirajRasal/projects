@@ -1,23 +1,55 @@
-.buttons{
-	text-align: center;
-	margin: 250px;
-	margin-left: 500px;
-	opacity: 0.8;
-}
-#output
-{
-margin: 20px;
-}
+
 .flexbox-container
 {
-	display: flex;
+display: flex;
+position: absolute;
+width: 100%;
+height: 23%;
+left: 0px;
+top: 0px;
+background-color: #C09A9A;
+}
+#score{
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 90px;
 }
 .flexbox1{
-	color:green;
+	margin-top:50px;
+	margin-right:1px;
+	color:black;
+	font-weight: bold;
+	font-size: 20px;
 }
 .flexbox2{
-	color:red;
+	margin-top: 50px;
+	color:black;
+	font-weight: bold;
+	font-size: 20px;
 }
 .flexbox3{
-	color:orange;
+	margin-top:50px;
+	color:black;
+	font-weight: bold;
+	font-size: 20px;
 }
+.img{
+	align-content: center;
+	margin-left: 17%;
+	margin-top:7%; /* don't change this value */
+	margin-right:20px; 
+	margin-bottom:10%;
+}
+.op{
+	margin-left:300px;
+	margin-top: 10px;
+}
+
+.rectangle2{
+position: absolute;
+top:23%;
+width: 100%;
+height: 77%;
+background-color:#E9DEDE;
+}
+

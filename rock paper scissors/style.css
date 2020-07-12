@@ -7,25 +7,28 @@ body {
 
 #welcome {
 	margin: auto;
-	padding: 1em;
+	padding: 1px;
 	padding-bottom: 0.2em;
 	margin-bottom: 1px;
-	width: 400px;
+	width: 40vw;
 	text-align: center;
 	font-family: cursive;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 3vw;
 	border-bottom: solid 2px #E9DEDE;
 }
 
 .flexbox-container {
+	/*margin:auto;		not working
+	width:100%;*/
 	background-color: #364f6b;
+
 }
 
 .container {
 	margin: auto;
 	padding: 1em;
-	width: 900px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 }
@@ -47,7 +50,7 @@ body {
 	text-align: center;
 	color: whitesmoke;
 	background-color: black;
-	border-radius: 3px;
+	border-radius: 13px;
 	box-shadow: 0px 0px 1px 6px gray;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
@@ -56,8 +59,8 @@ body {
 .flexbox {
 	display: flex;
 	flex-direction: row;
-	border-radius: 3px;
-	box-shadow: 0px 0px 1px 3px olive;
+	border-radius: 13px;
+	box-shadow: 0px 0px 1px 3px gray;
 	background-color: whitesmoke;
 }
 
@@ -101,7 +104,7 @@ body {
 }
 
 .op {
-	margin-left: 300px;
+	margin-left: 200px;
 	margin-top: 10px;
 }
 
@@ -117,7 +120,6 @@ body {
 }
 
 .rectangle2 {
-	background-color: #e8ffe8;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -129,10 +131,78 @@ body {
 	/*width: 100%;		does not work
 	height: auto;*/
 	margin-right: 100px;
+	width: 22vw;
+	height: 18vw;
 }
-/*#rock{
-	max-width: 100%;	not working
-	height: auto;
+
+@media only screen and (min-width: 600px) {
+	.visual-item {
+		float: left;
+		margin-right: 50px;
+		width: 10vw;
+		height: 15vw;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+	.visual-item{
+		float: left;
+		margin-right: 50px;
+		width: 10vw;
+		height: 12vw;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+	.visual-item{
+		float: left;
+		margin-right: 50px;
+		width: 10vw;
+		height: 15vw;
+	}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+	.visual-item {
+		float: left;
+		margin-right: 50px;
+		width: 10vw;
+		height: 15vw;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+	.visual-item {
+		float: left;
+		margin-right: 50px;
+		width: 10vw;
+		height: 15vw;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+	.visual-item {
+		float: left;
+		margin-right: 50px;
+		width: 15vw;
+		height: 18vw;
+	}
+}
+/*@media only screen and (max-width: 700px ){
+	.flexbox-container{
+		width:100vw;
+	}
 }*/
 
 .visual-item:hover {

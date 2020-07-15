@@ -1,27 +1,62 @@
 <html>
-    <head>
+  <head>
       <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding">
-  <link rel="stylesheet" href="csstyle.css">
-</head>
+      <meta content="utf-8" http-equiv="encoding">
+      <link rel="stylesheet" href="csstyle.css">
+
+<script src = "jquery-ui/external/jquery/jquery.js"></script>
+<link href = "jquery-ui-start/jquery-ui.css" rel = "stylesheet">
+<link href = "jquery-ui-start/jquery-ui.structure.css" rel = "stylesheet">
+<link href = "jquery-ui-start/jquery-ui.theme.css" rel = "stylesheet">
+<script src = "jquery-ui-start/jquery-ui.js"></script>
+
+
+<script type="text/javascript">
+ $(function(){
+   $("#name").tooltip({
+    track:true
+   });
+   $("#email").tooltip({
+    track:true
+   });
+   $("#date").datepicker({
+    showAnim: "slide",
+   }),
+   $("#date").tooltip({
+    track:true,
+   });
+});
+
+
+
+</script>
+
+<!--<script src="jsfile.js"></script>      external js file-->
+
+
+  </head>
 <title>Feedback-form</title>
 <body>
   <h1 id="title">corona virus survey </h1>
   <p id="description" align="center">Help the goverment by giving your opinion about ongoing corona crisis and help to make the change. </p><!--change the description-->
     <div class="form" align="center">
-    <form id="survey-form">
+    <form id="survey-form" runat="server">
       
       <lable id="name-lable">Name:</lable><br>
-        <input type="text" name="name" placeholder="enter your name"id="name">
+        <input type="text" name="name" placeholder="enter your name" id="name" title="enter your name">
       
       <br><br>
        
       <lable id="email-lable">Email:</lable><br>
-      <input type="email" name="email" placeholder="enter your email"id="email">
-  <br><br>  
+      <input type="email" name="email" placeholder="enter your email" id="email" title="enter your email address">
+  <br><br>
+      <label>birth-date:</label> <br> 
+      <input type="text" name="date" id="date" title="enter your birth-date" placeholder="enter birth-date">
+      
+  <br><br>
 
       <lable id="number-lable">Age:</lable><br>
-      <input type="number" name="age" placeholder="enter your age" id="age" min="18" max="100">
+      <input type="number" name="age" placeholder="enter your age" id="age" min="18" max="100" title="enter your age">
     
   <br><br>
       <lable id="dropdown lable">Select your current occuipation:</lable><br>

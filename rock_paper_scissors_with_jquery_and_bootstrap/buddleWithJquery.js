@@ -13,17 +13,17 @@ $("#rock").click(function(){
 	$("#display").html('<span class="display-item">you:' + userinput + '</span>');
 	$("#display1").html('<span class="display-item">computer:' + computerinput + '</span>');
 	if (computerinput == 'rock') {
-		$("#output").html('<span class="display-item">' + 'it is draw' + '</span>');
+		$("#output").html('<span class="display-item-draw">' + '<b>it is draw</b>' + '</span>');
 		draw++;
 		$('#draw').html("draw="+draw);
 	}
 	else if (computerinput == 'paper') {
-		$("#output").html('<span class="display-item">' + 'you win' + '</span>');
+		$("#output").html('<span class="display-item-win">' + '</b>you win</b>' + '</span>');
 		win++;
 		$("#losser").html('win='+win);
 	}
 	else if (computerinput == 'scissors') {
-		$("#output").html('<span class="display-item">' + 'you lose' + '</span>');
+		$("#output").html('<span class="display-item-lose">' + '<b>you lose</b>' + '</span>');
 		lose++;
 		$("#losser").html('lose='+lose);
 	}
@@ -41,17 +41,17 @@ $("#paper").click(function paper() {
 	$('#display').html('<span class="display-item">you:' + userinput + '</span>');
 	$('#display1').html('<span class="display-item">computer:' + computerinput + '</span>');
 	if (computerinput == 'rock') {
-		$('#output').html('<span class="display-item">' + "you win" + '</span>');
+		$('#output').html('<span class="display-item-win">' + "<b>you win</b>" + '</span>');
 		win++;
 		$('#winner').html('win=' + win);
 	}
 	else if (computerinput == 'paper') {
-		$('#output').html('<span class="display-item">' + 'it is draw' + '</span>');
+		$('#output').html('<span class="display-item-draw">' + '<b>it is draw</b>' + '</span>');
 		draw++;
 		$('#draw').html('draw=' + draw);
 	}
 	else if (computerinput == 'scissors') {
-		$('#output').html('<span class="display-item">' + 'you lose' + '</span>');
+		$('#output').html('<span class="display-item-lose">' + '</b>you lose</b>' + '</span>');
 		lose++;
 		$('#losser').html('lose='+lose);
 	}
@@ -66,17 +66,17 @@ $("#scissors").click(function scissors() {
 	$('#display').html('<span class="display-item">you:' + userinput + '</span>');
 	$('#display1').html('<span class="display-item">computer:' + computerinput + '</span>');
 	if (computerinput =='rock') {
-		$('#output').html('<span class="display-item">' + "you lose" + '</span>');
+		$('#output').html('<span class="display-item-lose">' + "<b>you lose</b>" + '</span>');
 		lose++;
 		$('#losser').html('lose=' + lose);
 	}
 	else if (computerinput == 'paper') {
-		$('#output').html('<span class="display-item">' + 'you win' + '</span>');
+		$('#output').html('<span class="display-item-win">' + '<b>you win</b>' + '</span>');
 		win++;
 		$('#winner').html('win=' + win);
 	}
 	else if (computerinput == 'scissors') {
-		$('#output').html('<span class="display-item">' + 'it is draw' + '</span>');
+		$('#output').html('<span class="display-item-draw">' + '<b>it is draw</b>' + '</span>');
 		draw++;
 		$('#draw').html('draw=' + draw);
 	}

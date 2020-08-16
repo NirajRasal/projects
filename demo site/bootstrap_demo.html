@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Bootstarap demo</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		/*.container-fluid{
+			background-color: cyan;
+		}*/
+		.temp{
+			margin-left: 200px;
+			width: 400px;
+		}
+		.alert-success{
+			display: none;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+    $('button').click(function(){
+        $('.alert').show();
+    }) 
+});
+	</script>
+</head>
+<body>
+	<div class="container-fluid"><br><br>
+		<div class="well">
+			<strong>anything</strong>
+ 		</div>
+		<div class="temp">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>name</th>
+					<th>age</th>
+					<th >address</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Niraj</td>
+					<td>19</td>
+					<td>pune</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+	<img class="img-responsive" src="crop_scissors.png" alt="scissors" width="200" height="100">
+<div class="btn-group btn-group-justified" role="group">
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary">Home</button>
+	</div>
+
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary">products</button>
+	</div>
+	
+	<div class="btn-group">
+		<button  type="button" class="btn btn-primary">about us</button>
+	</div>
+</div>
+<button type="button" class="btn btn-default">
+	<span class="glyphicon glyphicon-search"></span>&nbsp;search
+</button>
+
+<div class="alert alert-success">
+	<strong>success!!</strong>
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+</div>
+<h3>progress-bar</h3>
+</div class="progress">	
+	<div class="progress-bar progress-bar-striped active" role="progressbar" style="width:50%">
+	50%</div>
+</div>
+<br><br>
+<ul class="pager">
+	<li class="previous"><a href="#" >back</a></li>
+	<li class="next"><a href="#" >next</a></li>
+</ul>
+
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#p1">see more</button>
+<div id="p1" class="collapse">
+	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet velit placeat voluptatem impedit iure laborum illum eius, enim quasi ipsum.
+</div>
+
+</body>
+</html>

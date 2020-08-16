@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery animate example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var ball=$("div");
+				ball.animate({ top:'200px'},);		/* moves ball in down direction */
+				ball.animate({ top:'-=80px'},);		/* moves ball in upword direction by 80 px */
+				ball.animate({ top:'200px'},);
+				ball.animate({ top:'-=40px'},);
+				ball.animate({ top:'200px'},);
+
+			});
+		});
+
+	</script>
+	<style>
+		/*img{
+			height: 100%;
+			max-width: 100%;
+		}*/
+	</style>
+</head>
+
+<body>
+this is ball created  by using  jquery animate <br><br>
+<button>start animation</button>
+<div style="border-radius: 50px; background-color: black; padding: 5px; width: 40px; height: 40px; position: relative; margin-top: 20px">
+
+
+</body>
+</html>

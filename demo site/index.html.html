@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Menu demo</title>
+    <style>
+    body{
+        position:relative;
+    }
+      .carousel{
+    background: black;
+    margin-top: 20px;
+    width: 630px;
+    margin-left: 10%;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+        #product{
+            padding-top: 50px;
+            height: 500px;
+            background-color: lightsalmon;
+        }
+        #services{
+            padding-top: 50px;
+            height: 500px;
+            background-color:cyan;
+        }
+        #about{
+            padding-top: 50px;
+            height: 500px;
+            background-color: blue;
+        }
+        #consulting, #design, #testing{
+            padding-top: 50px;
+            height: 500px;
+            background-color: cornsilk;
+        }
+        .page-footer{
+            background-color: black;
+        }
+        img:hover{
+            transform:scale(1.1);
+        }
+        img{
+            margin:10px;
+        }
+    </style>
+</head>
+<!--
+<body data-spy="scroll" data-target=".navbar">
+
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">zodic</a>
+            </div>
+            
+                <div class="navbar navbar-collapse" style="margin-bottom: 0px; border:none;" id="nav1">
+                    <ul class="nav navbar-nav">
+                
+                         <li class="active"><a href="#product">Products</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#consulting">Consulting</a></li>
+                                    <li><a href="#design">Product Design</a></li>
+                                    <li><a href="#testing">Software Testing</a></li>
+                                </ul>
+                            </li>        
+                          <li><a href="#about">About us</a></li>
+                    </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-search">&nbsp;Search</span></a></li>
+                        </ul>
+                </div>
+    
+            </div>
+        </nav>-->
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Zodic</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="#product">product</a>
+      </li>
+
+       <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Services</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#design">Design</a>
+        <a class="dropdown-item" href="#consulting">Consulting</a>
+        <a class="dropdown-item" href="#testing">Testing</a>
+      </div>
+    </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About us</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+     <!--navbar end-->
+
+     <!--page content-->
+<div id="product" class="container-fluid">
+<br>
+<br>
+<p>
+  Our award winning product have helped our clients to expand and control there bussiness more efficiently.We make sure
+  that our product are ready to tackle bussiness problems by using advanced technologies like blockchain,machine learning and Artificial intelligance.
+</p>
+    
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image1.jpeg" alt="Los Angeles" width="500" height="300" class="img-fluid">
+      </div>
+      <div class="carousel-item">
+        <img src="image2.jpg" alt="Chicago" width="500" height="300" class="img-fluid">
+      </div>
+      <div class="carousel-item">
+        <img src="image3.jpeg" alt="New York" width="500" height="300" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+<div id="consulting" class="container-fluid">
+    2.1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat distinctio obcaecati accusamus, consequuntur esse quas sint. Voluptatum, dicta! Officia porro eligendi reiciendis inventore ullam magni facilis, impedit veniam suscipit?
+</div>
+<div id="design" class="container-fluid">
+    <p>
+    2.2 At Zodic we aim to provide best in class design services to our customers in very less time.Below are some examples of our designs..
+    </p>
+<br><br><br><br>
+<div class="row">
+
+    <div class="col-lg-4 col-md-12">
+
+    <img src="design1.jpg" class="rounded" width="400px" height="250px"  class="img-fluid">
+    </div>
+    
+    <div class="col-lg-4 col-md-12">
+
+    <img src="design2.jpeg" class="rounded" width="400px" height="250px" class="img-fluid">
+    </div>
+    
+    <div class="col-lg-4 col-md-12">
+
+    <img src="design3.jpg" class="rounded" width="400px" height="250px"  class="img-fluid">
+    </div>
+
+
+</div>
+
+
+
+</div>
+<div id="testing" class="container-fluid">
+    2.3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat distinctio obcaecati accusamus, consequuntur esse quas sint. Voluptatum, dicta! Officia porro eligendi reiciendis inventore ullam magni facilis, impedit veniam suscipit?
+</div>
+
+<div id="about" class="container-fluid">
+    3Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat distinctio obcaecati accusamus, consequuntur esse quas sint. Voluptatum, dicta! Officia porro eligendi reiciendis inventore ullam magni facilis, impedit veniam suscipit?
+</div>
+
+<!--page content end-->
+<!-- Footer -->
+<footer class="page-footer font-small">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://example.com/">example.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+</body>
+
+</html>
+
+<!--To do
+1 add modal demo to consulting section
+2 add team memeber and company info to about us section
+3 add call to action button on site
+-->

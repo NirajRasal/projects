@@ -9,43 +9,51 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Menu demo</title>
     <style>
+    iframe{
+      margin-right:70px;
+    }
     body{
         position:relative;
     }
-      .carousel{
+    .carousel{ 
+    height:320px;
     background: black;
-    margin-top: 20px;
-    width: 630px;
-    margin-left: 10%;
+    width: 600px;
+    margin-left: 52%;
 }
-.carousel-item{
-    text-align: center;
-    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-}
+      .carousel-item{
+        text-align: center;
+          max-height:330px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+      }
+      h3{
+        text-align:center;
+        font-weight:bold;
+      }
+    
         #product{
-            padding-top: 50px;
+            padding-top: 20px;
             height: 500px;
             background-color: lightsalmon;
         }
         #services{
-            padding-top: 50px;
+            padding-top: 20px;
             height: 500px;
             background-color:cyan;
         }
         #about{
-            padding-top: 50px;
+            padding-top: 30px;
             height: 500px;
             background-color: blue;
         }
         #consulting, #design, #testing{
-            padding-top: 50px;
-            height: 500px;
+            padding-top: 20px;
+            height: 530px;
             background-color: cornsilk;
         }
         .page-footer{
             background-color: black;
         }
-        img:hover{
+        div.row img:hover{
             transform:scale(1.1);
         }
         img{
@@ -53,43 +61,6 @@
         }
     </style>
 </head>
-<!--
-<body data-spy="scroll" data-target=".navbar">
-
-
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">zodic</a>
-            </div>
-            
-                <div class="navbar navbar-collapse" style="margin-bottom: 0px; border:none;" id="nav1">
-                    <ul class="nav navbar-nav">
-                
-                         <li class="active"><a href="#product">Products</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
-                                    <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#consulting">Consulting</a></li>
-                                    <li><a href="#design">Product Design</a></li>
-                                    <li><a href="#testing">Software Testing</a></li>
-                                </ul>
-                            </li>        
-                          <li><a href="#about">About us</a></li>
-                    </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-search">&nbsp;Search</span></a></li>
-                        </ul>
-                </div>
-    
-            </div>
-        </nav>-->
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
   <a class="navbar-brand" href="#">Zodic</a>
@@ -105,8 +76,8 @@
        <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Services</a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#design">Design</a>
         <a class="dropdown-item" href="#consulting">Consulting</a>
+         <a class="dropdown-item" href="#design">Design</a>
         <a class="dropdown-item" href="#testing">Testing</a>
       </div>
     </li>
@@ -123,12 +94,18 @@
 <div id="product" class="container-fluid">
 <br>
 <br>
-<p>
+<h3>Products</h3>
+<p style="width:40%;margin-top:20px">
   Our award winning product have helped our clients to expand and control there bussiness more efficiently.We make sure
   that our product are ready to tackle bussiness problems by using advanced technologies like blockchain,machine learning and Artificial intelligance.
+  Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. 
+ 
 </p>
-    
-<div id="demo" class="carousel slide" data-ride="carousel">
+&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Buy Product</a>&nbsp;&nbsp;&nbsp;
+<a href="#" class="btn btn-secondary">View more</a>
+
+<!--carosel-->
+<div id="demo" style="margin-bottom:80px" class="carousel" data-ride="carousel">
 
     <!-- Indicators -->
     <ul class="carousel-indicators">
@@ -160,42 +137,83 @@
   </div>
 </div>
 <div id="consulting" class="container-fluid">
-    2.1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat distinctio obcaecati accusamus, consequuntur esse quas sint. Voluptatum, dicta! Officia porro eligendi reiciendis inventore ullam magni facilis, impedit veniam suscipit?
+<h3>Consulting</h3>
+    <p>2.1 We provide different consulting services some of them are mentioned Below</p>
+    
+    <div class="row">
+
+     <div class="card col-lg-4" style="width:350px">
+    <img class="card-img-top" src="consult1.png" alt="Card image" style="width:90%;">
+    <div class="card-body"><br><br>
+      <h4 class="card-title">Merger and Acquisition</h4>
+      <p class="card-text">We analyze and provide you with best Acquisition and Merger for your bussiness.</p>
+      <a href="#" class="btn btn-primary">Learn more</a>
+    </div>
+  </div>
+  
+     <div class="card col-lg-4" style="width:350px">
+    <img class="card-img-top" src="consult2.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Corparate Manangement</h4>
+      <p class="card-text">Our Corparate Manangement system are used by many forture 500 companies.</p>
+      <a href="#" class="btn btn-primary">Learn more</a>
+    </div>
+  </div>
+  
+     <div class="card col-lg-4" style="width:350px">
+    <img class="card-img-top" src="consult3.png" alt="Card image" style="width:90%">
+    <div class="card-body">
+      <h4 class="card-title">Project Manangement</h4>
+      <p class="card-text">We provide full end-to-end project Manangement Services by follwing proper industry 
+      standards.</p>
+      <a href="#" class="btn btn-primary">Learn more</a>
+    </div>
+  </div>
+    </div>
 </div>
+<!--Design-->
 <div id="design" class="container-fluid">
     <p>
+    <h3>Design</h3>
     2.2 At Zodic we aim to provide best in class design services to our customers in very less time.Below are some examples of our designs..
     </p>
-<br><br><br><br>
-<div class="row">
+<br><br>
+<div class="row" id="sign">
 
     <div class="col-lg-4 col-md-12">
 
-    <img src="design1.jpg" class="rounded" width="400px" height="250px"  class="img-fluid">
+    <img src="design1.jpg" class="rounded"  width="400px" height="250px" >
     </div>
     
     <div class="col-lg-4 col-md-12">
 
-    <img src="design2.jpeg" class="rounded" width="400px" height="250px" class="img-fluid">
+    <img src="design2.jpeg" class="rounded" width="400px" height="250px">
     </div>
     
     <div class="col-lg-4 col-md-12">
 
-    <img src="design3.jpg" class="rounded" width="400px" height="250px"  class="img-fluid">
+    <img src="design3.jpg" class="rounded" width="400px" height="250px">
     </div>
-
-
 </div>
 
-
+<!--testing-->
 
 </div>
 <div id="testing" class="container-fluid">
-    2.3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat distinctio obcaecati accusamus, consequuntur esse quas sint. Voluptatum, dicta! Officia porro eligendi reiciendis inventore ullam magni facilis, impedit veniam suscipit?
+  <p>
+    2.3 At Zodic we provide best in class testing facility to our clients so that our clients can test and improve the product and 
+    services to meet industry standards.
+    </p>
+    <br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UWJiTwB85nY" frameborder="3" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-left:40px"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QFKdQT1mASI" frameborder="3"
+     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <div id="about" class="container-fluid">
-    3Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat distinctio obcaecati accusamus, consequuntur esse quas sint. Voluptatum, dicta! Officia porro eligendi reiciendis inventore ullam magni facilis, impedit veniam suscipit?
+    3Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat distinctio obcaecati accusamus, consequuntur esse quas sint. Voluptatum, dicta! Officia porro eligendi
+      <iframe src="http://wikimapia.org/#lat=18.529716&lon=73.839798&z=11&l=&ifr=1&m=w" width="318" height="318" frameborder="0"></iframe>
 </div>
 
 <!--page content end-->
@@ -217,4 +235,6 @@
 1 add modal demo to consulting section
 2 add team memeber and company info to about us section
 3 add call to action button on site
+4 use google map with api key (but it requires billing account)
+
 -->

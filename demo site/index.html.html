@@ -5,60 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Menu demo</title>
     <style>
-    iframe{
-      margin-right:70px;
-    }
-    body{
-        position:relative;
-    }
-    .carousel{ 
-    height:320px;
-    background: black;
-    width: 600px;
-    margin-left: 52%;
-}
-      .carousel-item{
-        text-align: center;
-          max-height:330px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-      }
-      h3{
-        text-align:center;
-        font-weight:bold;
-      }
-    
-        #product{
-            padding-top: 20px;
-            height: 500px;
-            background-color: lightsalmon;
-        }
-        #services{
-            padding-top: 20px;
-            height: 500px;
-            background-color:cyan;
-        }
-        #about{
-            padding-top: 30px;
-            height: 500px;
-            background-color: blue;
-        }
-        #consulting, #design, #testing{
-            padding-top: 20px;
-            height: 530px;
-            background-color: cornsilk;
-        }
-        .page-footer{
-            background-color: black;
-        }
-        div.row img:hover{
-            transform:scale(1.1);
-        }
-        img{
-            margin:10px;
-        }
     </style>
 </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -83,9 +34,12 @@
     </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#about">About us</a>
-      </li>    
-    </ul>
+        <a class="nav-link" href="#about">Contact us</a>
+      </li>
+      <li class="navbar-nav ml-auto">
+      <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+    </li>
+  </ul>
   </div>  
 </nav>
      <!--navbar end-->
@@ -95,15 +49,19 @@
 <br>
 <br>
 <h3>Products</h3>
-<p style="width:40%;margin-top:20px">
+<div class="row">
+<div class="col-6">
+<p style="margin-top:20px">
   Our award winning product have helped our clients to expand and control there bussiness more efficiently.We make sure
   that our product are ready to tackle bussiness problems by using advanced technologies like blockchain,machine learning and Artificial intelligance.
   Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. 
  
 </p>
-&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Buy Product</a>&nbsp;&nbsp;&nbsp;
-<a href="#" class="btn btn-secondary">View more</a>
+&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-shutter-more text-uppercase">Buy Product</a>&nbsp;&nbsp;&nbsp;
+<a href="#" class="btn btn-shutter-more text-uppercase">View more</a>
 
+</div>
+<div class="col-6">
 <!--carosel-->
 <div id="demo" style="margin-bottom:80px" class="carousel" data-ride="carousel">
 
@@ -136,6 +94,11 @@
     </a>
   </div>
 </div>
+<!--col 2 ends-->
+</div>
+<!--row ends-->
+</div>
+<!--container ends-->
 <div id="consulting" class="container-fluid">
 <h3>Consulting</h3>
     <p>2.1 We provide different consulting services some of them are mentioned Below</p>
@@ -212,10 +175,50 @@
 </div>
 
 <div id="about" class="container-fluid">
-    3Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat distinctio obcaecati accusamus, consequuntur esse quas sint. Voluptatum, dicta! Officia porro eligendi
-      <iframe src="http://wikimapia.org/#lat=18.529716&lon=73.839798&z=11&l=&ifr=1&m=w" width="318" height="318" frameborder="0"></iframe>
+<div class="row">
+  <div class="col-2">
+        <h4 style="font-weight:bold;">Related links</h4><br><br>
+        <a href="#" style="color:black;">Blog</a><br><br>
+        <a href="#" style="color:black;">About us</a><br><br>
+        <a href="#" style="color:black;">Investors</a><br><br>
+        <a href="#" style="color:black;">Security</a><br><br>
+      <a href="#" style="color:black;">Privacy</a><br><br>
+   </div>
+   <div class="col-2"><br><br><br>
+      <p></p>
+      <a href="#" style="color:black;">Blog</a><br><br>
+      <a href="#" style="color:black;">About us</a><br><br>
+      <a href="#" style="color:black;">Investors</a><br><br>
+      <a href="#" style="color:black;">Security</a><br><br>
+      <a href="#" style="color:black;">Privacy</a><br><br>
+   </div>
+   <div class="col-2">
+    <h4 style="font-weight:bold;" class="ftr-head mt-sm-2">Connect with us</h4>
+       <ul class="list-inline">
+		  
+            <li class="list-inline-item"><a title="Twitter" target="_blank" href="#">
+                <image src="twitter.svg" width="16" height="16"/>
+              </a></li>
+            
+            <li class="list-inline-item"><a title="Facebook" target="_blank" href="#">
+                <image src="icons8-facebook-48.png" width="16" height="16"/>
+              </a></li>
+            
+            <li class="list-inline-item"><a title="Youtube" target="_blank" href="#">
+                <image src="youtube.svg" width="16" height="16"/>
+              </a></li>
+            
+          </ul>
+   
+   </div>   
+      <div class="col-6">
+      <h4 style="text-align:center; font-weight:bold;">Give us visit</h4>
+      <h5 style="text-align:center;">Address:Mmit,Lohegaon, Pune, Maharashtra 411047</h5>
+      <iframe src="http://wikimapia.org/#lat=18.529716&lon=73.839798&z=11&l=&ifr=1&m=w" width="438" height="348" 
+      target="_blank" frameborder="0"></iframe>
+      </div>
 </div>
-
+</div>
 <!--page content end-->
 <!-- Footer -->
 <footer class="page-footer font-small">
@@ -227,14 +230,16 @@
     <!-- Copyright -->
   
   </footer>
+  
+<a href="#product" class="scroll-up" style="display:inline;">
+    <img src="arrow_up.png" alt="Arrow up" class="img-responsive"/>
 </body>
 
 </html>
 
 <!--To do
 1 add modal demo to consulting section
-2 add team memeber and company info to about us section
-3 add call to action button on site
-4 use google map with api key (but it requires billing account)
-
+2 add call to action button on contact us section
+3 add search button
+4 make site responsive for mobile
 -->

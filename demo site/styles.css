@@ -1,0 +1,132 @@
+ .form-control{
+      margin-left:690px;
+    }
+ul.footer-txt > li:first-child {
+	margin-top: 20px;
+}
+ul.footer-txt > li {
+	margin-bottom: 10px;
+}
+ul.footer-txt > li > a {
+	color: #3F3F3F;
+	font-size: 16px;
+}
+    .scroll-up {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	z-index: 1;
+}
+.btn-shutter-more:hover:before {
+    width: 100%;
+}
+.btn-shutter-more:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    z-index: -1;
+}
+.btn-shutter-more{
+  color: #fff;
+	border: 1px solid #fff;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	background-color: transparent;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	padding: 12px 50px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	letter-spacing: 1.5px;
+	margin-top: 20px;
+	font-weight: 700;
+	font-size: 14px;
+}
+    .btn-shutter-more:hover {
+     position: relative;
+    z-index: 1;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 16px;
+    color:#f8f8f8;
+  }
+    iframe{
+      margin-right:70px;
+      
+    }
+    [target=_blank]{      /* to position iframe map*/
+      margin-left:20%;
+      margin-top:30px;
+    }
+    body{
+        position:relative;
+    }
+    .carousel{ 
+    height:320px;
+    background: black;
+    width: 600px;
+    align-left: 52%;
+}
+      .carousel-item{
+        text-align: center;
+          max-height:330px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+      }
+      h3{
+        text-align:center;
+        font-weight:bold;
+      }
+    
+        #product{
+            padding-top: 20px;
+            height: 500px;
+            background-color: lightsalmon;
+        }
+        #services{
+            padding-top: 20px;
+            height: 500px;
+            background-color:cyan;
+        }
+        #about{
+            padding-top: 30px;
+            height: 500px;
+            background-color: white;
+        }
+        #consulting, #design, #testing{
+            padding-top: 20px;
+            height: 530px;
+            background-color: cornsilk;
+        }
+        .page-footer{
+            background-color: black;
+        }
+        div.row img:hover{
+            transform:scale(1.1);
+        }
+        img{
+            margin:10px;
+        }
